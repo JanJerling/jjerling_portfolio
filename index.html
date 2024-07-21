@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo">Jan Jerling</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Jan Jerling</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul class="menu-links-list">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div></div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/JanJerling.jpg" alt="Jan Jerling Profile Pic" class="profile-pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text_p1">Hello I'm</p>
+            <h1 class="title">Jan Jerling</h1>
+            <p class="section__text_p2">Frontend Dev</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Jan_Jerling_CV_2024.pdf')">My CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Me</button>
+            </div>
+            <div id="socials-container">
+                <a href="https://www.linkedin.com" target="_blank"><img src="./assets/linkedin_icon.png" alt="LinkedIn" class="icon"></a>
+                <a href="https://www.github.com" target="_blank"><img src="./assets/github_icon.png" alt="GitHub" class="icon"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text_p2">Get to know More</p>
+        <div class="title"></div>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/Jan.png" alt="Profile Picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="details-display-container">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience Icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>2+ Years<br>Frontend Deving</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/graduation_cap.png" alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <p>BEng Industrial<br>Stellenbosch University</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus alias, voluptatem esse ipsam vitae sint illo sequi officia suscipit, voluptas eius assumenda ipsum fugit dolores ducimus blanditiis accusamus soluta voluptatibus veniam tempora inventore perferendis porro dolorem! Necessitatibus natus, nulla ipsa, modi animi consequatur saepe, quod ut molestias repudiandae adipisci. Doloremque.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/down_arrow.png" alt="Next Section Arrow" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+
+    <section id="experience">
+        <p class="section__text_p2"> Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="details-display-container">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
+                            <div>
+                                <h3>Flutter</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
+                            <div>
+                                <h3>Javascript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
+                            <div>
+                                <h3>R</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Legendary</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/down_arrow.png" alt="Next Section Arrow" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+
+    <section id="projects">
+        <p class="section__text_p2">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/Screenshot_1719761720.png" alt="Watch Project Image" class="project-img">
+                    <h2 class="experience-sub-title project-title"> Project One</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick=" window.open('https://github.com','_blank')">Github</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/down_arrow.png" alt="Next Section Arrow" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+
+    <section id="contact"></section>
+
+    <script src="script.js"></script>
+</body>
+</html>
