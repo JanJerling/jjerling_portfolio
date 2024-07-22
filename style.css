@@ -340,3 +340,77 @@ article {
 article .icon {
     cursor: default;
 }
+
+/* PROJECTS SECTION */
+
+#projects {
+    position: relative;
+}
+
+.color-container {
+    border-color: grey;
+    background-color: white;
+}
+
+.project-img {
+    border-radius: 2rem;
+    width: 40%;
+    height: 40%;
+}
+
+.project-title {
+    margin: 1rem;
+    color: black;
+}
+
+.project-btn {
+    color: black;
+    border: grey;
+}
+
+/* CONTACT */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-parent-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: grey 0.1rem solid;
+    border-color: lightgray;
+    background: white;
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p {
+    font-size: larger;
+}
+
+.contact-icon {
+    cursor: default;
+}
+
+/* FOOTER */
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p {
+    text-align: center;
+}
