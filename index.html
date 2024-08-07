@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Jan Jerling - Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
 
     <nav id="desktop-nav">
-        <div class="logo">Jan Jerling</div>
         <div>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#profile" onclick="scrollToTop(event)">This Is Me</a></li>
+                <li><a href="#about">Why Me</a></li>
+                <li><a href="#experience">Where I've Been</a></li>
+                <li><a href="#projects">What I've Done</a></li>
+                <li><a href="#contact">Let's Connect</a></li>
             </ul>
         </div>
     </nav>
@@ -39,21 +39,45 @@
     </nav>
 
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/JanJerling.jpg" alt="Jan Jerling Profile Pic" class="profile-pic">
-        </div>
-        <div class="section__text">
-            <p class="section__text_p1">Hello I'm</p>
-            <h1 class="title">Jan Jerling</h1>
-            <p class="section__text_p2">Frontend Dev</p>
+        <div class="profile_text">
+                <p class="pre-title-text">Hi, I am</p>
+                <p class="title">Jan Jerl<span class="color-i-dot"><span class="color-i-line">i</span></span>ng</p>
+            <div class="title-text-container">
+                <p class="post-title-text ptt1">I like to build things.</p>
+                <p class="post-title-text ptt2">Make things better, faster.</p>
+                <p class="post-title-text ptt3">Make things beautiful.</p>
+            </div>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Jan_Jerling_CV_2024.pdf')">My CV</button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Me</button>
+                <a title="Curriculum Vitae" href="" onclick="window.open('./assets/Jan_Jerling_CV_2024.pdf')" target="_blank">
+                    <svg class="svg-icon" id="cv-icon" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(45.90812,-162.1072)">
+                            <path id="cv_icon_borderpage"
+                                d="m -45.90502,162.10721 c -0.0017,0 -0.0031,0.001 -0.0031,0.003 v 41.99382 c 0,0.002 0.0014,0.003 0.0031,0.003 h 41.9938192 c 0.0017,0 0.0031,-0.001 0.0031,-0.003 v -41.99382 c 0,-0.002 -0.0014,-0.003 -0.0031,-0.003 z m 9.997839,3.27371 h 17.186031 l 8.593274,8.59276 v 23.21357 c 0.0103,1.59379 -0.777751,3.65528 -3.535702,3.64628 h -22.439974 c -2.618553,-0.16096 -3.577494,-1.46004 -3.584794,-3.73206 v -26.71208 c 0.0014,-3.19088 0.529018,-5.01148 3.781165,-5.00847 z"/>
+                           <path id="cv_icon_pageflap"
+                                d="m -19.152975,165.63114 v 5.36445 c -0.0011,1.38887 0.03937,2.76577 2.708259,3.38533 h 6.041509 z"/>
+                           <path id="cv_icon_text"
+                                d="m -29.14561,180.51258 q -1.295305,0 -2.005872,0.97706 -0.710567,0.96966 -0.710567,2.70913 0,3.61956 2.716439,3.61956 1.139868,0 2.76085,-0.56996 v 1.92451 q -1.332313,0.55515 -2.9755,0.55515 -2.361157,0 -3.612051,-1.42857 -1.250894,-1.43598 -1.250894,-4.1155 0,-1.68765 0.614344,-2.95339 0.614345,-1.27314 1.761614,-1.94671 1.154673,-0.68099 2.701637,-0.68099 1.576571,0 3.167946,0.76241 l -0.740175,1.86529 q -0.606942,-0.28867 -1.221287,-0.50333 -0.614345,-0.21466 -1.206484,-0.21466 z m 11.235847,-1.75427 h 2.316745 L -19.271685,189.58 h -2.501789 l -3.671264,-10.82169 h 2.316746 l 2.035479,6.43972 q 0.17024,0.56995 0.347882,1.33235 0.185043,0.755 0.229454,1.05109 0.08142,-0.68098 0.555131,-2.38344 z"/>
+                        </g>
+                    </svg>                    
+                </a>
+                <a href="https://github.com/JanJerling" target="_blank">
+                    <svg class="svg-icon" id="github-icon" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+                        <g transform="translate(45.607137,-67.805792)">
+                            <path d="m -45.485948,67.926985 v 42.416535 h 12.524817 c -0.232085,-2.26816 2.675838,-0.62171 2.652551,-2.23553 -0.09322,-1.36981 -0.110086,-2.91928 -0.06925,-4.47776 -5.117932,1.27907 -7.481085,-1.24314 -8.269262,-3.38326 -0.392216,-1.064964 -0.901073,-1.807799 -1.340487,-2.300628 -0.866013,-0.971291 -2.892661,-1.680005 -2.265495,-2.586923 0.414012,-0.597973 3.980137,-0.09541 5.346961,3.17345 1.678359,1.955881 3.841415,2.476041 6.568074,1.324464 0.06432,-1.31037 0.337958,-2.555726 1.588535,-3.495391 -10.47434,0.419836 -14.387468,-11.814864 -8.578806,-18.785417 -1.089102,-2.840226 -0.344327,-4.533823 0.198438,-6.354134 2.370042,-0.229931 4.607256,0.894749 6.474023,2.34301 4.525705,-1.137213 8.831485,-1.019047 12.986805,-0.03979 1.99158,-1.310072 3.22687,-2.493375 6.5133,-2.3828 0.60096,2.256184 1.1532,4.500623 0.19895,6.393925 3.8604498,3.317043 5.0236298,18.831807 -8.81703,18.825207 2.24267,0.987874 2.13856,5.379357 1.66915,11.716597 -0.0013,1.81022 2.61312,-0.56376 2.73575,2.26498 H -3.0694143 V 67.926985 Z" />
+                        </g>
+                    </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/jan-jerling" target="_blank">
+                <svg class="svg-icon" id="linkedin-icon" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(44.568338,-19.177125)">
+                        <path d="M -44.568339,19.177124 V 61.588489 H -2.1569743 V 19.177124 Z m 9.892936,7.452258 a 3.5536172,3.2641037 0 0 1 3.553788,3.263884 3.5536172,3.2641037 0 0 1 -3.553788,3.263883 3.5536172,3.2641037 0 0 1 -3.553271,-3.263883 3.5536172,3.2641037 0 0 1 3.553271,-3.263884 z m 18.792135,8.612395 c 3.57745,-0.03684 7.3412,2.552477 7.4476072,8.814449 h 0.00155 c 0.00166,-8.9e-5 0.00299,0.0014 0.0031,0.0031 l 0.025321,0.383956 c 8.18e-5,0.0012 -5.03e-4,0.0021 -0.00155,0.0026 h 0.00103 v 9.711035 h -6.5324182 v -9.711035 h 10e-4 l 0.0067,-0.288871 c -0.188185,-4.386126 -5.117249,-5.578525 -6.633703,-1.18184 7.66e-4,2.15e-4 0.0013,8.07e-4 10e-4,0.0016 l -0.02274,0.05891 v 11.108366 h -6.50968 V 35.50946 h 6.50968 v 2.874244 a 0.08733317,0.2837036 0 0 1 0.0031,-0.0026 l 0.02894,-0.03617 c 1.098536,-1.946361 3.342837,-3.079199 5.670972,-3.103169 z m -21.556824,0.2651 h 5.735567 v 18.639689 h -5.735567 z m 29.0152832,8.888346 c -3.09e-5,0.0068 5.562e-4,0.01284 5.168e-4,0.01964 a 0.1405599,0.06201172 0 0 1 5.168e-4,0.0016 z" />
+                    </g>
+                </svg>
+        </a>
             </div>
-            <div id="socials-container">
-                <a href="https://www.linkedin.com" target="_blank"><img src="./assets/linkedin_icon.png" alt="LinkedIn" class="icon"></a>
-                <a href="https://www.github.com" target="_blank"><img src="./assets/github_icon.png" alt="GitHub" class="icon"></a>
-            </div>
+        </div>
+        <div class="profile-pic-container">
+            <img src="./assets/jjerling_presenting_flipped.png" alt="Jan Jerling Profile Pic" class="profile-pic">
         </div>
     </section>
 
