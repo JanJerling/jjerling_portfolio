@@ -1,12 +1,38 @@
-/* GENERAL */
+/* 
+- accompanies mediaqueries.css for responsive elements
+- follows top-down, in order of appearance structure excepting the preliminary 'GENERAL' section
+- !sde! = specific design element
+
+Structure:
+- | RESPONSIVE ELEMENTS |
+- | GENERAL |
+- | NAV |
+- Sections:
+-- | PROFILE |
+-- | PROFILE |
+
+*/
+
 
 /*imports*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*variables*/
 :root {
     --primary_color: #2e364d;
-    --secondary_color: #F5CA50;
+    --secondary_color: #f5ca50;
   }
+
+
+
+/* | RESPONSIVE ELEMENTS | */
+
+#hamburger {
+    display: none;
+}
+   
+
+/* | GENERAL | */
 
 * {
     margin: 0;
@@ -25,10 +51,13 @@ body {
     background-color: whitesmoke;
 }
 
+section {
+    height: 85vh; /*with nav height 15vh*/
+}
+
 a {
     color: black;
     text-decoration: none;
-    text-decoration-color: whitesmoke;
 }
 
 a:hover {
@@ -36,9 +65,10 @@ a:hover {
     color: grey;
 }
 
-/* DESKTOP NAV */
 
-nav {
+/* | NAV | */
+
+#desktop-nav {
     display: flex;
     position: sticky;
     top: 0;
@@ -57,100 +87,17 @@ nav {
     font-size: 1.2rem;
 }
 
-/* HAMBURGER MENU */
 
-#hamburger-nav {
- display: none;
-}
-
-.hamburger-menu {
-    position: relative;
-    display: inline-block;
-}
-
-.hamburger-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 24px;
-    width: 30px;
-    cursor: pointer;
-}
-
-.hamburger-icon span {
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    transition: all 0.3 ease-in-out;
-}
-
-.menu-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: whitesmoke;
-    width: fit-content;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3 ease-in-out;
-}
-
-.menu-links a {
-    display: block;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.5rem;
-    color: black;
-    text-decoration: none;
-    transition: all 0.3 ease-in-out;
-}
-
-.menu-links.open {
-    max-height: 300px;
-}
-
-.menu-links-list {
-    list-style: none;
-}
-
-.hamburger-icon.open span:first-child {
-    transform: rotate(45deg) translate(10px, 5px);
-}
-
-.hamburger-icon.open span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(10px, -5px);
-}
-
-section {
-    height: 85vh;
-}
-
-/* SECTIONS */
-/* PROFILE SECTION */
-
+/** SECTIONS **/
+/* | PROFILE | (This is me)*/
 
 #profile {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10rem;
+    height: 85vh;
 }
-/* .section__text {
-    align-self: center;
-    text-align: center;
-}
-
-.section__text p {
-    font-weight: 600;
-}
-
-.section__text_p1 {
-    text-align: center;
-} */
 
 .title {
     font-size: 5rem;
@@ -161,11 +108,11 @@ section {
     color: var(--primary_color);
 }
 
-.color-i-dot {
+.color-i-dot { /*!sde!*/
     position: relative;
 }
 
-.color-i-dot::before {
+.color-i-dot::before { /*!sde!*/
     content: '';
     position: absolute;
     top: 1.35rem;
@@ -176,7 +123,8 @@ section {
     background-color: var(--secondary_color);
     border-radius: 2rem;
 }
-.color-i-line {
+
+.color-i-line { /*!sde!*/
     color: var(--primary_color);
 }
 
@@ -191,54 +139,17 @@ section {
     margin-bottom: 0.7rem;
 }
 
-.ptt3 {
+#colored-post-title-text { /*!sde!*/
     margin-bottom: 1rem;
     color: var(--primary_color);
-    background-color: rgba(245, 202, 80, 0.5);
+    background-color: rgba(245, 202, 80, 0.5); /* derived from econdary_color: #F5CA50 with .5 opacity */
     width: fit-content;
 }
 
-.btn-container {
+.profile-icon-container {
     display: flex;
     align-items: center;
     gap: 1rem;
-}
-
-.btn {
-    cursor: pointer;
-    padding: 0.5rem 01rem;
-    border-radius: 0.5rem;
-    font-family: "Montserrat";
-    font-size: 1.2rem;
-    height: 2.7rem;
-    border: none;
-}
-
-.pbtn1 {
-    background-color: var(--primary_color);
-    color: whitesmoke;
-}
-
-.pbtn1:hover {
-    transition: all 300ms ease;
-    color: var(--primary_color);
-    background-color: lightgray;
-}
-
-.icon-btn {
-    cursor: pointer;
-    height: 2.5rem;
-    width: 2.5rem;
-    border-radius: 0.35rem;
-}
-
-.icon-btn:hover {
-    background-color: grey;
-    transition: all 300ms ease;
-}
-
-.linkedin-icon {
-    width: 200;
 }
 
 .svg-icon {
@@ -255,24 +166,15 @@ section {
     fill:lightgray;
 }
 
-
-/* .section__pic-container {
-    height: 25rem;
-    width: 25rem;
-    margin: auto 0;
-} */
-
 .profile-pic {
     border-radius: 1rem;
     height: 28.9rem; /* aligning with supporting text */
     margin-top: 0.1rem; /* aspect ratio shifts it down a little */
 }
 
-/* BUTTONS */
 
 
-
-/* ABOUT SECTION */
+/* | ABOUT | (Why me)*/
 
 #about {
     position: relative;
