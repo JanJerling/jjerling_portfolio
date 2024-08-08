@@ -1,3 +1,133 @@
+@media screen and (max-width: 75rem /*1200px*/) {
+
+    #profile {
+        gap: 6rem;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+    
+    .title-text-container {
+        margin-top: 4.5rem;
+        margin-bottom: 5.5rem;
+    }
+
+    .color-i-dot::before { 
+        top: 1.2rem;
+        width: 0.8rem;
+        height: 0.8rem; 
+    }
+
+    .profile-pic {
+        height: 25.9rem;
+    }
+    
+}
+
+@media screen and (max-width: 60rem /*960px*/) {
+
+    #profile {
+        gap: 4rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+    
+    .title-text-container {
+        margin-top: 3.5rem;
+        margin-bottom: 4.5rem;
+    }
+
+    .color-i-dot::before { 
+        top: 0.8rem;
+        width: 0.6rem;
+        height: 0.6rem; 
+    }
+
+    .profile-pic {
+        height: 22.9rem;
+    }
+
+    .svg-icon {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 52rem /*832px*/) {
+
+    .nav-links {
+        gap: 1.3rem;
+        font-size: 1rem;
+    }
+
+    #profile {
+        gap: 4rem;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+    
+    .title-text-container {
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    .color-i-dot::before { 
+        top: 0.8rem;
+        width: 0.6rem;
+        height: 0.6rem; 
+    }
+
+    .post-title-text {
+        font-size: 1rem;
+    }
+
+    .profile-pic {
+        max-height: 15rem;
+    }
+
+    .svg-icon {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    
+}
+
+@media screen and (max-width: 40rem /*640px*/) {
+
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger {
+        display: flex;
+        height: 15vh;
+    }
+
+    #profile {
+        display: block;
+    }
+
+        
+
+
+    .hamburger-icon span {
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        transition: all 0.3 ease-in-out;
+    }
+
+   
+}
+
+
+/*
 @media screen and (max-width: 100rem) {
     #profile {
         height: 80vh;
@@ -155,3 +285,4 @@
         text-align: justify;
     }
 }
+*/

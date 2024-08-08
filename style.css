@@ -95,8 +95,19 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10rem;
-    height: 85vh;
+    gap: 8rem;
+    background-color: cornflowerblue;
+}
+
+.profile-content-container {
+    background-color: bisque;
+    max-width: 40%;
+}
+
+.profile-text-container {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .title {
