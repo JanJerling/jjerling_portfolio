@@ -27,38 +27,6 @@
 
 @media screen and (max-width: 60rem /*960px*/) {
 
-    #profile {
-        gap: 4rem;
-    }
-
-    .title {
-        font-size: 3rem;
-    }
-    
-    .title-text-container {
-        margin-top: 3.5rem;
-        margin-bottom: 4.5rem;
-    }
-
-    .color-i-dot::before { 
-        top: 0.8rem;
-        width: 0.6rem;
-        height: 0.6rem; 
-    }
-
-    .profile-pic {
-        height: 22.9rem;
-    }
-
-    .svg-icon {
-        height: 2.5rem;
-        width: 2.5rem;
-    }
-    
-}
-
-@media screen and (max-width: 52rem /*832px*/) {
-
     .nav-links {
         gap: 1.3rem;
         font-size: 1rem;
