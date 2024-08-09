@@ -20,30 +20,36 @@
             </ul>
         </div>
     </nav>
-    <nav id="hamburger">
-        <!-- <div class="logo">Hi, I am</div> -->
-        <div class="hamburger-menu">
+    <nav id="hamburger-nav">
             <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+                <svg id="hamburger-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <rect id="hamburger-rect1" class="hamburger-rect" height="10" width="90"/>
+                    <rect id="hamburger-rect2" class="hamburger-rect" height="10" width="90"/>
+                    <rect id="hamburger-rect3" class="hamburger-rect" height="10" width="90"/>
+                </svg>
             </div>
             <div class="menu-links">
                 <ul class="menu-links-list">
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                    <li><a href="#profile" onclick="hamburgerToTop(event)">This Is Me</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">Why Me</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Where I've Been</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">What I've Done</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Let's Connect</a></li>
                 </ul>
-            </div></div>
+            </div>
     </nav>
 
     <section id="profile">
         <div class="profile-content-container">
             <div class="profile-text-container">
+            <div class="title-container">
                 <p class="pre-title-text">Hi, I am</p>
                 <p class="title">Jan Jerl<span class="color-i-dot"><span class="color-i-line">i</span></span>ng</p>
-            <div class="title-text-container">
+            </div>
+        <div class="profile-pic-container-mobile">
+            <img class="profile-pic" src="./assets/jjerling_presenting_flipped.png" alt="Jan Jerling Profile Pic">
+        </div>
+                <div class="title-text-container">
                 <p class="post-title-text">I like to build things.</p>
                 <p class="post-title-text">Make things better, faster.</p>
                 <p id="colored-post-title-text" class="post-title-text">Make things beautiful.</p>
@@ -83,152 +89,7 @@
         </div>
     </section>
 
-    <section id="about">
-        <p class="section__text_p2">Get to know More</p>
-        <div class="title"></div>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/Jan.png" alt="Profile Picture" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="details-display-container">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience Icon" class="icon">
-                        <h3>Experience</h3>
-                        <p>2+ Years<br>Frontend Deving</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/graduation_cap.png" alt="Education Icon" class="icon">
-                        <h3>Education</h3>
-                        <p>BEng Industrial<br>Stellenbosch University</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus alias, voluptatem esse ipsam vitae sint illo sequi officia suscipit, voluptas eius assumenda ipsum fugit dolores ducimus blanditiis accusamus soluta voluptatibus veniam tempora inventore perferendis porro dolorem! Necessitatibus natus, nulla ipsa, modi animi consequatur saepe, quod ut molestias repudiandae adipisci. Doloremque.</p>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/down_arrow.png" alt="Next Section Arrow" class="icon arrow" onclick="location.href='./#experience'">
-    </section>
-
-    <section id="experience">
-        <p class="section__text_p2"> Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="details-display-container">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
-                            <div>
-                                <h3>Flutter</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
-                            <div>
-                                <h3>Javascript</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
-                            <div>
-                                <h3>Python</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
-                            <div>
-                                <h3>R</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Checkmark icon" class="icon">
-                            <div>
-                                <h3>SQL</h3>
-                                <p>Legendary</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/down_arrow.png" alt="Next Section Arrow" class="icon arrow" onclick="location.href='./#projects'">
-    </section>
-
-    <section id="projects">
-        <p class="section__text_p2">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="details-display-container">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/Screenshot_1719761720.png" alt="Watch Project Image" class="project-img">
-                    <h2 class="experience-sub-title project-title"> Project One</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick=" window.open('https://github.com','_blank')">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick=" window.open('https://github.com','_blank')">Live Demo</button>
-                    </div>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/Screenshot_1719761720.png" alt="Watch Project Image" class="project-img">
-                    <h2 class="experience-sub-title project-title"> Project Two</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick=" window.open('https://github.com','_blank')">Github</button>
-                        <button class="btn btn-color-2 project-btn" onclick=" window.open('https://github.com','_blank')">Live Demo</button>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        <img src="./assets/down_arrow.png" alt="Next Section Arrow" class="icon arrow" onclick="location.href='./#contact'">
-    </section>
-
-    <section id="contact">
-        <p class="section__text_p2">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-parent-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email Icon" class="icon contact-icon">
-                <p><a href="mailto:jan.jerling@gmail.com" target="_blank">jan.jerling@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin_icon.png" alt="LinkedIn Icon" class="icon contact-icon">
-                <p><a href="https://linkedin.com" target="_blank">LinkedIn</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/github_icon.png" alt="Github Icon" class="icon contact-icon">
-                <p><a href="https://github.com">GitHub</a></p>
-            </div>
-        </div>
-    </section>
-
+ 
     <footer>
         <nav>
             <div class="nav-links-container">

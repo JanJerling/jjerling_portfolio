@@ -1,14 +1,14 @@
 /* 
 - accompanies mediaqueries.css for responsive elements
-- follows top-down, in order of appearance structure excepting the preliminary 'GENERAL' section
+- follows the html top-down structure excepting the preliminary 'GENERAL' section
+- using rem where possible for sizing
 - !sde! = specific design element
 
 Structure:
-- | RESPONSIVE ELEMENTS |
+- | HIDDEN RESPONSIVE ELEMENTS |
 - | GENERAL |
 - | NAV |
 - Sections:
--- | PROFILE |
 -- | PROFILE |
 
 */
@@ -25,9 +25,13 @@ Structure:
 
 
 
-/* | RESPONSIVE ELEMENTS | */
+/* | HIDDEN RESPONSIVE ELEMENTS | */
 
-#hamburger {
+#hamburger-nav {
+    display: none;
+}
+
+.profile-pic-container-mobile {
     display: none;
 }
    
@@ -179,164 +183,6 @@ a:hover {
     border-radius: 1rem;
     height: 28.9rem; /* aligning with supporting text */
     margin-top: 0.1rem; /* aspect ratio shifts it down a little */
-}
-
-
-
-/* | ABOUT | (Why me)*/
-
-#about {
-    position: relative;
-}
-
-.section-container {
-    display: flex;
-    gap: 4rem;
-    height: 80%;
-    margin: 2rem;
-}
-
-.section__pic-container {
-    height: 25rem;
-    width: 25rem;
-    margin: auto 0;
-}
-
-.about-details-container {
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    margin: 2rem;
-}
-
-.details-display-container {
-    gap: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    display: flex;
-}
-
-.about-pic {
-    border-radius: 2rem;
-}
-
-.details-container {
-    padding: 1.5rem;
-    flex: 1;
-    background: white;
-    border-radius: 2rem;
-    border: darkgrey 0.1rem solid;
-    text-align: center;
-}
-
-.arrow {
-    position: absolute;
-    right: 5rem;
-    cursor: pointer;
-    height: 2rem;
-}
-
-
-/* EXPERIENCE SECTION */
-
-#experience {
-    position: relative;
-}
-
-.experience-sub-title {
-    color: darkgrey;
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
-}
-
-.experience-details-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.article-container {
-    display: flex;
-    text-align: initial;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 2.5rem;
-    justify-content: space-around;
-}
-
-article {
-    display: flex;
-    width: 10rem;
-    justify-content: space-around;
-    gap: 0.5rem;
-}
-
-article .icon {
-    cursor: default;
-}
-
-/* PROJECTS SECTION */
-
-#projects {
-    position: relative;
-}
-
-.color-container {
-    border-color: grey;
-    background-color: white;
-}
-
-.project-img {
-    border-radius: 2rem;
-    width: 40%;
-    height: 40%;
-}
-
-.project-title {
-    margin: 1rem;
-    color: black;
-}
-
-.project-btn {
-    color: black;
-    border: grey;
-}
-
-/* CONTACT */
-
-#contact {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 70vh;
-}
-
-.contact-info-parent-container {
-    display: flex;
-    justify-content: center;
-    border-radius: 2rem;
-    border: grey 0.1rem solid;
-    border-color: lightgray;
-    background: white;
-    margin: 2rem auto;
-    padding: 0.5rem;
-}
-
-.contact-info-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 1rem;
-}
-
-.contact-info-container p {
-    font-size: larger;
-}
-
-.contact-icon {
-    cursor: default;
 }
 
 /* FOOTER */
